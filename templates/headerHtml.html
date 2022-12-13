@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpaceY</title>
+
+<!-- add icon link -->
+<link rel="icon" href="images/spaceIcon.ico" type="image/x-icon">
+<style>
+
+body {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+li {
+	float: left;
+}
+
+li{
+
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 0px 10px;
+	/* font-size: 12px;
+	font-style: bold; */
+	top:14px;
+	    font: 14px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+a{
+	top:12px;
+}
+
+.underline_animation {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: white;
+}
+
+.underline_animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.underline_animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.headerImg {
+	height: 40px;
+	width: 110px;
+}
+
+.lineImg {
+	width: 60px;
+	height: 35px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+.shop {
+	position: absolute;
+	right: 60px;
+	top : 5px;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 150px;
+  text-decoration: none;
+  font-size: 12px;
+  font-style: bold;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span {
+	position: absolute;
+	right: 20px;
+	color: white;
+	top:10px;
+	font-size:20px;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div id="i">
+		<ul>
+			<li><a href="home.jsp"><img src="images/spacey.jpg" class="headerImg" ></li>
+			<li><a class="underline_animation" href="falcon9.jsp">FALCON9</a></li>
+			<li><a class="underline_animation" href="faconHeavy.jsp">FACON HEAVY</a></li>
+			<li><a class="underline_animation" href="dragon.jsp">DRAGON</a></li>
+			<li><a class="underline_animation" href="starShip.jsp">STARSHIP</a></li>
+			<li><a class="underline_animation" href="#">HUMAN SPACEFLIGHT</a></li>
+			<li><a class="underline_animation" href="#">RIDESHARE</a></li>
+			<li><a class="underline_animation" href="#">STARLINK</a></li>
+			<li class="shop"><a class="underline_animation" href="#">SHOP</a></li>
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">MISSION</a>
+			  <a href="#">LAUNCHES</a>
+			  <a href="#">CAREERS</a>
+			  <a href="#">UPDATES</a>
+			  <a href="#">SHOP</a>
+			</div>
+			
+			<span onclick="openNav()">&#9776; </span>
+			
+			
+		</ul>
+	</div>
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+   
+</body>
+
+
+</html>

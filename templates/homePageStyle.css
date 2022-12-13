@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+.container .btn, .container .btn2, .container .btn3, .container .btn4{
+	position: absolute;
+	left: 5%;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	padding: 12px 24px;
+	border: 2px solid white;
+	cursor: pointer;
+	text-align: center;
+	height: 50px;
+	width: 190px;
+}
+
+.container .btn:hover, .container .btn:focus {
+	box-shadow: inset 0 -3.25em 0 0 var(- -hover);
+}
+
+.container .btn {
+	top: 75%;
+}
+
+.container .btn2
+{
+	top: 210%;	
+}
+
+.container .btn3
+{
+	top: 330%;	
+}
+
+.container .btn4
+{
+	top: 450%;	
+}
+
+
+.container .rocketImage {
+	
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	display: block;
+}
+
+.imageContent1
+{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	font-weight: bold;
+	color: white;
+}
+
+.imageContent2
+{
+	position: absolute;
+	top: 190%;
+	left: 5%;
+	font-weight: bold;
+	color: white;
+}
+
+.imageContent3
+{
+	position: absolute;
+	top: 310%;
+	left: 5%;
+	font-weight: bold;
+	font-size:40px;
+	color: white;
+}
+
+.imageContent4
+{
+	position: absolute;
+	top: 420%;
+	left: 5%;
+	font-weight: bold;
+	font-size:40px;
+	color: white;
+}
